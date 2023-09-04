@@ -1,0 +1,203 @@
+/* Select the body element and apply some styles */
+body {
+   /* Set the background color to a light gray */
+   background-color: #f0f0f0;
+   /* Set the font family to Arial */
+   font-family: Arial, sans-serif;
+}
+
+/* Select the h1 element and apply some styles */
+h1 {
+   /* Set the text color to a dark purple */
+   color: #663399;
+   /* Set the text alignment to center */
+   text-align: center;
+   /* Set the font size to 36 pixels */
+   font-size: 36px;
+   /* Set the margin top and bottom to 20 pixels */
+   margin: 20px 0;
+}
+
+/* Select the div element with the id container and apply some styles */
+#container {
+   /* Set the width to 80% of the parent element */
+   width: 80%;
+   /* Set the maximum width to 600 pixels */
+   max-width: 600px;
+   /* Center the element horizontally using auto margins */
+   margin: 0 auto;
+   /* Set the background color to white */
+   background-color: #ffffff;
+   /* Set the padding to 20 pixels */
+   padding: 20px;
+   /* Set the border radius to 10 pixels */
+   border-radius: 10px;
+}
+
+/* Select the input element with the class add-task and apply some styles */
+.add-task {
+   /* Set the width to 80% of the parent element */
+   width: 80%;
+   /* Set the height to 40 pixels */
+   height: 40px;
+   /* Set the border to none */
+   border: none;
+   /* Set the outline to none */
+   outline: none;
+   /* Set the padding left to 10 pixels */
+   padding-left: 10px;
+}
+
+/* Select the button element and apply some styles */
+button {
+   /* Set the width to 15% of the parent element */
+   width: 15%;
+   /* Set the height to match the input element */
+   height: 40px;
+   /* Set the border to none */
+   border: none;
+   /* Set the outline to none */
+   outline: none;
+   /* Set the background color to a light purple */
+   background-color: #d9b3ff;
+   /* Set the cursor to pointer */
+   cursor: pointer;
+}
+
+/* Select the ul element with the id list and apply some styles */
+#list {
+   /* Set the list style type to none */
+   list-style-type: none;
+   /* Set the margin top and bottom to zero */
+   margin: 0;
+   /* Set the padding left and right to zero */
+   padding: 0;
+}
+
+/* Select all li elements inside the ul element with id list and apply some styles */
+#list li {
+   /* Set the display to flex to align items horizontally */
+   display: flex;
+   /* Center items vertically */
+   align-items: center;
+   /* Set the height to match the input element and button */
+   height: 40px;
+   /* Set a bottom border of one pixel solid gray */
+   border-bottom: 1px solid #cccccc;
+}
+
+/* Select all input elements of type checkbox inside li elements and apply some styles */
+li input[type=checkbox] {
+   /* Hide the default checkbox appearance */
+   display: none;
+}
+
+/* Select all label elements inside li elements and apply some styles */
+li label {
+   /* Display as a block element, taking full width */
+   flex-grow: 1;
+   /* Position relative to its normal position */
+   position: relative;
+}
+
+/* Select all label elements inside li elements before their content and apply some styles */
+li label:before {
+   /* Display as an inline-block element */
+   display: inline-block;
+   /* Position absolute relative to its parent element */
+   position: absolute;
+   /* Set left position to zero */
+   left: 0;
+   /* Set top position to zero */
+   top: 0;
+   /* Set width and height to match input element and button */
+   width: 40px;
+   height: 40px;
+   /* Create a rounded border of one pixel solid gray */
+   border-radius: 50%;
+   border: 1px solid #cccccc;
+}
+
+/* Select all input elements of type checkbox that are checked */
+.task-checkbox:checked + label {
+   /* Create a linear gradient background from top left to bottom right with two colors */
+   background-image: linear-gradient(to bottom right, #d9b3ff, #663399);
+   /* Set the color of the label text to white when checked */
+   color: #fff;
+   /* Add padding to create space for the checkbox visual */
+   padding-left: 25px;
+}
+
+/* Style the default checkbox appearance as an empty square */
+.task-checkbox {
+   width: 20px;
+   height: 20px;
+   /* Hide the default checkbox appearance */
+   opacity: 0;
+   /* Use a background color for the checkbox square */
+   background-color: #fff;
+   /* Add a border to the checkbox square */
+   border: 1px solid #ccc;
+   /* Position the checkbox square before the label text */
+   position: absolute;
+   left: 0;
+   top: 0;
+   /* Add space between the checkbox square and label text */
+   margin-right: 10px;
+}
+
+/* Style the label text */
+.task-checkbox + label {
+   /* Set the display style to inline-block */
+   display: inline-block;
+   /* Position relative to allow absolute positioning of the checkbox square */
+   position: relative;
+   /* Add padding to the label for spacing */
+   padding-left: 30px;
+}
+
+/* Style the label text */
+.task-checkbox + label {
+   /* Set the display style to inline-block */
+   display: inline-block;
+   /* Position relative to allow absolute positioning of the checkbox square */
+   position: relative;
+   /* Add padding to the label for spacing */
+   padding-left: 30px;
+   /* Add a line-through text decoration when the checkbox is checked */
+   text-decoration: none; /* Initially, no line */
+}
+
+/* Select all input elements of type checkbox that are checked */
+.task-checkbox:checked + label {
+   /* Create a linear gradient background from top left to bottom right with two colors */
+   background-image: linear-gradient(to bottom right, #e9dbf8, #9169ba);
+   /* Set the color of the label text to white when checked */
+   color: #e4e1e1;
+   font-weight: bolder;
+   /* Add padding to create space for the checkbox visual */
+   padding-left: 25px;
+   /* Apply a line-through text decoration to indicate completed tasks */
+   text-decoration: line-through; /* Add line-through when checked */
+}
+
+
+/* Select the span element with the id tasks-counter and apply some styles */
+#tasks-counter {
+   /* Set the font weight to bold */
+   font-weight: bold;
+   /* Set the color to a dark purple */
+   color: #663399;
+}
+
+.delete {
+   width: 15px;
+   height: 17px;
+   margin-left: 10px;
+   /* Add some space between the task text and the icon */
+}
+
+.task-checkbox {
+   /* Set the margin-right to create space between checkbox and task text */
+   margin-right: 10px;
+}
